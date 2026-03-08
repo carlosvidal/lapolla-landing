@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Política de Privacidad | LaPolla.Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f1729", accent: "#22c55e", "background-light": "#f6f7f8" },
+            fontFamily: { display: ["Inter", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM2PJETLZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', { analytics_storage: 'denied' });
+      gtag('js', new Date());
+      gtag('config', 'G-VNM2PJETLZ');
+    </script>
+    <style>body { font-family: "Inter", sans-serif; }</style>
+  </head>
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Nav -->
+    <nav class="bg-white border-b border-primary/10">
+      <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/landing/" class="flex items-center gap-2">
+          <div class="bg-primary p-1.5 rounded-lg">
+            <span class="material-symbols-outlined text-white text-xl">sports_soccer</span>
+          </div>
+          <span class="text-lg font-extrabold tracking-tight uppercase">LaPolla.Club</span>
+        </a>
+        <a href="/landing/" class="text-sm text-primary/60 hover:text-primary transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-base">arrow_back</span> Volver
+        </a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+      <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">Política de Privacidad</h1>
+      <p class="text-sm text-primary/40 mb-12">Última actualización: 7 de marzo de 2026</p>
+
+      <div class="prose-custom space-y-8 text-primary/70 leading-relaxed">
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">1. Responsable del Tratamiento</h2>
+          <p>LaPolla.Club (en adelante, "la Plataforma") es operada desde Lima, Perú. El responsable del tratamiento de datos personales es el equipo de LaPolla.Club, con domicilio en Lima, Perú.</p>
+          <p>Correo de contacto: <a href="mailto:juguemos@lapolla.club" class="text-accent hover:underline">juguemos@lapolla.club</a></p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">2. Datos que Recopilamos</h2>
+          <p>Recopilamos los siguientes datos personales:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li><strong>Datos de registro:</strong> nombre, apellido, correo electrónico corporativo.</li>
+            <li><strong>Datos de uso:</strong> predicciones realizadas, puntuaciones, rankings, área/departamento dentro de la empresa.</li>
+            <li><strong>Datos técnicos:</strong> dirección IP, tipo de navegador, dispositivo, cookies de sesión y analítica.</li>
+            <li><strong>Datos proporcionados por la empresa:</strong> nombre de la empresa (tenant), logo, configuración de marca.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">3. Finalidad del Tratamiento</h2>
+          <p>Utilizamos los datos personales para:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>Gestionar el registro y autenticación de usuarios.</li>
+            <li>Operar la plataforma de predicciones deportivas corporativas.</li>
+            <li>Calcular puntuaciones, rankings y estadísticas.</li>
+            <li>Enviar notificaciones relacionadas con el torneo (recordatorios de predicción, resultados, resúmenes semanales).</li>
+            <li>Generar reportes de participación para los administradores de cada empresa.</li>
+            <li>Mejorar la plataforma mediante analítica de uso.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">4. Base Legal</h2>
+          <p>El tratamiento de datos se fundamenta en:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li><strong>Consentimiento:</strong> al registrarte en la plataforma, aceptas esta política.</li>
+            <li><strong>Ejecución contractual:</strong> el tratamiento es necesario para proporcionar el servicio contratado por tu empresa.</li>
+            <li><strong>Interés legítimo:</strong> para mejorar nuestros servicios y prevenir fraudes.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">5. Aislamiento de Datos (Multi-tenancy)</h2>
+          <p>La plataforma opera bajo un modelo multi-tenant. Esto significa que:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>Los datos de cada empresa están completamente aislados.</li>
+            <li>Los usuarios de una empresa no pueden acceder a los datos de otra.</li>
+            <li>Los administradores de cada empresa solo ven los datos de sus propios colaboradores.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">6. Compartición de Datos</h2>
+          <p>No vendemos ni compartimos datos personales con terceros, salvo:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li><strong>Proveedores de infraestructura:</strong> Supabase (base de datos), Cloudflare (CDN y almacenamiento), Netlify/Render (hosting).</li>
+            <li><strong>Analítica:</strong> Google Analytics (datos anonimizados).</li>
+            <li><strong>Obligación legal:</strong> cuando sea requerido por ley o autoridad competente.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">7. Retención de Datos</h2>
+          <p>Los datos personales se conservan durante la vigencia del servicio contratado por la empresa. Una vez finalizado el torneo o la relación contractual, los datos se conservarán por un máximo de 12 meses adicionales para fines estadísticos, tras lo cual serán eliminados.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">8. Derechos del Usuario</h2>
+          <p>De acuerdo con la Ley N° 29733 (Ley de Protección de Datos Personales del Perú), tienes derecho a:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li><strong>Acceso:</strong> conocer qué datos personales tenemos sobre ti.</li>
+            <li><strong>Rectificación:</strong> corregir datos inexactos.</li>
+            <li><strong>Cancelación:</strong> solicitar la eliminación de tus datos.</li>
+            <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos.</li>
+          </ul>
+          <p class="mt-2">Para ejercer estos derechos, escribe a <a href="mailto:juguemos@lapolla.club" class="text-accent hover:underline">juguemos@lapolla.club</a>.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">9. Seguridad</h2>
+          <p>Implementamos medidas técnicas y organizativas para proteger tus datos, incluyendo:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>Cifrado en tránsito (HTTPS/TLS).</li>
+            <li>Autenticación segura mediante tokens JWT.</li>
+            <li>Políticas de seguridad a nivel de fila (RLS) en la base de datos.</li>
+            <li>Almacenamiento seguro de contraseñas (hashing con bcrypt).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3">10. Cambios en esta Política</h2>
+          <p>Nos reservamos el derecho de actualizar esta política. Los cambios se publicarán en esta página con la fecha de actualización correspondiente.</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-primary/5 py-8">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-primary/40">© 2026 LaPolla.Club. Hecho con pasión en Perú 🇵🇪</p>
+        <div class="flex gap-6 text-xs text-primary/40">
+          <a href="/landing/privacidad.html" class="hover:text-primary transition-colors font-medium text-primary">Privacidad</a>
+          <a href="/landing/terminos.html" class="hover:text-primary transition-colors">Términos</a>
+          <a href="/landing/cookies.html" class="hover:text-primary transition-colors">Cookies</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] transform translate-y-full transition-transform duration-500" style="display:none;">
+      <div class="max-w-4xl mx-auto px-4 pb-4">
+        <div class="bg-primary text-white rounded-2xl p-5 shadow-2xl border border-white/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div class="flex-1"><p class="text-sm leading-relaxed">Usamos cookies para mejorar tu experiencia. <a href="/landing/cookies.html" class="text-accent hover:underline ml-1">Más información</a></p></div>
+          <div class="flex gap-2 flex-shrink-0">
+            <button onclick="acceptCookies(false)" class="px-4 py-2 text-sm font-medium text-white/70 hover:text-white border border-white/20 rounded-lg transition-colors">Solo esenciales</button>
+            <button onclick="acceptCookies(true)" class="px-5 py-2 text-sm font-bold bg-accent text-primary rounded-lg hover:bg-accent/90 transition-colors">Aceptar todas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function acceptCookies(a){document.cookie='cookie_consent='+(a?'all':'essential')+';path=/;max-age=31536000;SameSite=Lax';hideBanner();if(a)gtag('consent','update',{analytics_storage:'granted'})}
+      function hideBanner(){var b=document.getElementById('cookie-banner');b.classList.add('translate-y-full');setTimeout(function(){b.style.display='none'},500)}
+      (function(){var m=document.cookie.match(/cookie_consent=(\w+)/);if(m){if(m[1]==='all')gtag('consent','update',{analytics_storage:'granted'})}else{var b=document.getElementById('cookie-banner');b.style.display='block';setTimeout(function(){b.classList.remove('translate-y-full')},500)}})();
+    </script>
+
+  </body>
+</html>
